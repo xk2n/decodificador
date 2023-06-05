@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Barbearia Alura</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <section class="main-box">
+        <div class="logo-alura">
+          <img src="logo.svg" alt="logo da alura" />
+        </div>
+        <div class="centralizador">
+          <div class="input-box">
+            <textarea
+              class="textarea"
+              placeholder="Digite seu texto"
+              maxlength="300"
+              autofocus
+              autocapitalize="none"
+            ></textarea>
+          </div>
+
+          <div class="container-botoes">
+            <div>
+              <div class="container-icone">
+                <div class="icone"></div>
+                <p>Apenas letras minúsculas e sem acento.</p>
+              </div>
+              <button class="btn btn_criptografar" onclick="btnEncriptar()">
+                Criptografar
+              </button>
+              <button class="btn btn_descriptografar">Descriptografar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- container do lado exibe informações-->
+      <section class="aside">
+        <div class="">
+          <div class="imagem-procura">
+            <img src="procurando.svg" alt="logo da alura" />
+          </div>
+          <div class="mensagem">
+            <h2>Nenhuma mensagem encontrada</h2>
+            <p>
+              Digite um texto que você deseja criptografar ou descriptografar
+            </p>
+            <textarea class="mensagem_criptografada"></textarea>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
